@@ -30,19 +30,33 @@ type identification struct {
 }
 
 type emisor struct {
-	XMLName           xml.Name         `xml:"Emisor"`
-	Nombre            string           `xml:"Nombre"`
-	Identification    []identification `xml:"Identification"`
-	NombreComercial   string           `xml:"NombreComercial"`
-	Ubicacion         []ubicacion      `xml:"Ubicacion"`
-	Telefono          []telefono       `xml:"Telefono"`
-	Fax               []fax            `xml:"Fax"`
-	CorreoElectronico string           `xml:"CorreoElectronico"`
+	XMLName           xml.Name       `xml:"Emisor"`
+	Nombre            string         `xml:"Nombre"`
+	Identification    identification `xml:"Identification"`
+	NombreComercial   string         `xml:"NombreComercial"`
+	Ubicacion         ubicacion      `xml:"Ubicacion"`
+	Telefono          telefono       `xml:"Telefono"`
+	Fax               fax            `xml:"Fax"`
+	CorreoElectronico string         `xml:"CorreoElectronico"`
 }
 
-func (e emisor) add() emisor {
+/*Add ....*/
+func add() emisor {
 
-	e = emisor{Nombre: "Carlos", NombreComercial: "asdasd", CorreoElectronico: "asdasd"}
+	newIdentification := identification{Tipo: "01", Numero: "111111"}
+	newUbication := ubicacion{Provincia: "01", Canton: "02", Distrito: "03", Barrio: "asdasd", OtrasSenas: "asdsad"}
+	newTelefono := telefono{CodigoPais: "506", NumTelefono: "444444"}
+	newFax := fax{CodigoPais: "506", NumTelefono: "asdsa"}
 
-	return e
+	new := emisor{
+		Nombre:            "sadsadsa",
+		Identification:    newIdentification,
+		NombreComercial:   "asdadsasa",
+		Ubicacion:         newUbication,
+		Telefono:          newTelefono,
+		Fax:               newFax,
+		CorreoElectronico: "ctreminiom079@gmail.com"}
+
+	return new
+
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./logic"
+	"github.com/ctreminiom/api-facturacion/src/logic"
 )
 
 func main() {
