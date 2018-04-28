@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/ctreminiom/api-facturacion/src/logic"
+	"github.com/ctreminiom/api-facturacion/src/xml"
 )
 
 func main() {
 
-	logic.Create()
+	xml.Create()
 
 }

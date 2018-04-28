@@ -1,4 +1,4 @@
-package logic
+package xml
 
 import (
 	"encoding/xml"
@@ -13,7 +13,7 @@ const xmlnsXDS = "http://www.w3.org/2001/XMLSchema"
 const xmlnsXSI = "http://www.w3.org/2001/XMLSchema-instance"
 const xsi = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica FacturaElectronica_V.4.2.xsd"
 
-type bill struct {
+type factura struct {
 	XMLName           xml.Name `xml:"FacturaElectronica"`
 	Xmlns             string   `xml:"xmlns,attr"`
 	XmlnsDS           string   `xml:"xmlns:ds,attr"`
@@ -25,6 +25,10 @@ type bill struct {
 	FechaEmision      string   `xml:"FechaEmision"`
 	Emisor            emisor   `xml:"Emisor"`
 	Receptor          receptor `xml:"Receptor"`
+	CondicionVenta    string   `xml:"CondicionVenta"`
+	PlazoCredito      string   `xml:"PlazoCredito"`
+	MedioPago         string   `xml:"MedioPago"`
+	DetalleServicio   detalle  `xml:"DetalleServicio"`
 }
 
 /*Create ....*/
@@ -34,7 +38,9 @@ func Create() {
 
 	receptor := addReceptor()
 
-	new := bill{
+	deta := addDetails()
+
+	new := factura{
 		Xmlns:             xmlns,
 		XmlnsDS:           xmlnsDS,
 		XmlnsXSD:          xmlnsXDS,
@@ -44,7 +50,11 @@ func Create() {
 		NumeroConsecutivo: "22222",
 		FechaEmision:      time.Now().Format(time.RFC3339),
 		Emisor:            emisor,
-		Receptor:          receptor}
+		Receptor:          receptor,
+		CondicionVenta:    "01",
+		PlazoCredito:      "02",
+		MedioPago:         "01",
+		DetalleServicio:   deta}
 
 	output, err := xml.MarshalIndent(new, "  ", "    ")
 

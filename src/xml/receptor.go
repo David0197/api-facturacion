@@ -1,16 +1,17 @@
-package logic
+package xml
 
 import "encoding/xml"
 
 type receptor struct {
-	XMLName           xml.Name       `xml:"Receptor"`
-	Nombre            string         `xml:"Nombre"`
-	Identification    identification `xml:"Identification"`
-	NombreComercial   string         `xml:"NombreComercial"`
-	Ubicacion         ubicacion      `xml:"Ubicacion"`
-	Telefono          telefono       `xml:"Telefono"`
-	Fax               fax            `xml:"Fax"`
-	CorreoElectronico string         `xml:"CorreoElectronico"`
+	XMLName                  xml.Name       `xml:"Receptor"`
+	Nombre                   string         `xml:"Nombre"`
+	Identification           identification `xml:"Identification"`
+	IdentificacionExtranjero string         `xml:"IdentificacionExtranjero"`
+	NombreComercial          string         `xml:"NombreComercial"`
+	Ubicacion                ubicacion      `xml:"Ubicacion"`
+	Telefono                 telefono       `xml:"Telefono"`
+	Fax                      fax            `xml:"Fax"`
+	CorreoElectronico        string         `xml:"CorreoElectronico"`
 }
 
 func addReceptor() receptor {

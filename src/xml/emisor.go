@@ -1,4 +1,4 @@
-package logic
+package xml
 
 import "encoding/xml"
 
