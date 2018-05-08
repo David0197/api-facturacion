@@ -1,4 +1,4 @@
-package xml
+/*package xml
 
 import (
 	"encoding/xml"
@@ -105,4 +105,7 @@ func addDetails() detalle {
 
 	return new
 
+
 }
+
+*/

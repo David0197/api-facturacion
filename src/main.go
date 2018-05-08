@@ -6,6 +6,6 @@ import (
 
 func main() {
 
-	xml.Create()
+	xml.CreateBill("Carlos")
 
 }

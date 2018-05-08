@@ -1,11 +1,6 @@
 package xml
 
-import (
-	"encoding/xml"
-	"fmt"
-	"os"
-	"time"
-)
+/*
 
 const xmlns = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica"
 const xmlnsDS = "http://www.w3.org/2000/09/xmldsig#"
@@ -31,7 +26,6 @@ type factura struct {
 	DetalleServicio   detalle  `xml:"DetalleServicio"`
 }
 
-/*Create ....*/
 func Create() {
 
 	emisor := add()
@@ -66,3 +60,5 @@ func Create() {
 
 	os.Stdout.Write(output)
 }
+
+*/

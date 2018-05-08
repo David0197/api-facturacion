@@ -1,7 +1,6 @@
 package xml
 
-import "encoding/xml"
-
+/*
 type fax struct {
 	XMLName     xml.Name `xml:"Fax"`
 	CodigoPais  string   `xml:"CodigoPais"`
@@ -40,7 +39,6 @@ type emisor struct {
 	CorreoElectronico string         `xml:"CorreoElectronico"`
 }
 
-/*Add ....*/
 func add() emisor {
 
 	newIdentification := identification{Tipo: "01", Numero: "111111"}
@@ -60,3 +58,5 @@ func add() emisor {
 	return new
 
 }
+
+*/
