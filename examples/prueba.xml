@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<NotaDebitoElectronica 
+  xmlns="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/notaDebitoElectronica" 
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/notaDebitoElectronica NotaDebitoElectronica_V4.2.xsd">
+  <Clave>50611041800070232071700100001021522773384107756324</Clave>
+  <NumeroConsecutivo>00100001021522773384</NumeroConsecutivo>
+  <FechaEmision>2018-04-11T14:10:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>Walner Borbon</Nombre>
+    <Identificacion>
+      <Tipo>01</Tipo>
+      <Numero>702320717</Numero>
+    </Identificacion>
+    <NombreComercial>Walner Borbon</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>08</Distrito>
+      <Barrio>01</Barrio>
+      <OtrasSenas>Frente escuela</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>83168485</NumTelefono>
+    </Telefono>
+    <Fax>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>83168485</NumTelefono>
+    </Fax>
+    <CorreoElectronico>walner1borbon@gmail.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>Laboratory CLIENTE</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3001123208</Numero>
+    </Identificacion>
+    <NombreComercial/>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>01</Distrito>
+      <Barrio>01</Barrio>
+      <OtrasSenas/>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>83439500</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>rt@prueba.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <PlazoCredito>0</PlazoCredito>
+  <MedioPago>01</MedioPago>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Sp</UnidadMedida>
+      <Detalle>Precios de Transferencia</Detalle>
+      <PrecioUnitario>875</PrecioUnitario>
+      <MontoTotal>875</MontoTotal>
+      <SubTotal>875</SubTotal>
+      <MontoTotalLinea>875</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoMoneda>USD</CodigoMoneda>
+    <TipoCambio>562.04</TipoCambio>
+    <TotalServGravados>0</TotalServGravados>
+    <TotalServExentos>875</TotalServExentos>
+    <TotalMercanciasGravadas>0</TotalMercanciasGravadas>
+    <TotalMercanciasExentas>0</TotalMercanciasExentas>
+    <TotalGravado>0</TotalGravado>
+    <TotalExento>875</TotalExento>
+    <TotalVenta>875</TotalVenta>
+    <TotalDescuentos>0</TotalDescuentos>
+    <TotalVentaNeta>875</TotalVentaNeta>
+    <TotalImpuesto>0</TotalImpuesto>
+    <TotalComprobante>875</TotalComprobante>
+  </ResumenFactura>
+  <InformacionReferencia>
+    <TipoDoc>03</TipoDoc>
+    <Numero>50609041800070232071700100001031522773382107756320</Numero>
+    <FechaEmision>2018-04-09T19:10:00-06:00</FechaEmision>
+    <Codigo>01</Codigo>
+    <Razon>Sin razón</Razon>
+  </InformacionReferencia>
+  <Normativa>
+    <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+    <FechaResolucion>07-10-2016 08:00:00</FechaResolucion>
+  </Normativa>
+  <Otros></Otros>
+  <ds:Signature Id="xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <ds:Reference Id="xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05-ref0" URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <ds:DigestValue>JTM643bbzqE6PyewfaOzIIPYYLHvwQBbh/TKZStgDBg=</ds:DigestValue>
+      </ds:Reference>
+      <ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05-signedprops">
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <ds:DigestValue>zbagke7IYnjulqXR5/9OnVo+Ua8Q7r34eDoQzvbXVpE=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue Id="xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05-sigvalue">
+W/Gfn/DVSoYcDLsFszAb/jobySmot2MgGLIYvHejRIkyx4SXRtrQboE1BKDhRq5WfljgvUxjFbhq pwIMMx/BPiKsaQkyyBPzpZ+FdvxuyTgT8CbCcV2oaEjGtdi3tqtpSHvATTKQLbSbDI9IwSn6tkaW /hnbrW1W0F62WaIXFLe4NJDpycXbuub6oHdAvSzcV1NER2wbd+Tazyj/MTLYBMsXcvj7e1vz+qsj d3KJOhmkIRDIXu798TtZph0ZYijke2Wqhx4R+ZC+z4SHmxApSicW/9oQfq42T4BPd4A4W8CanKcB BWGXUbG/F3tb18kKjJcNeDkam0yCErc5nEzSQA==
+</ds:SignatureValue>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>
+MIIFYTCCA0mgAwIBAgIGAWMyw5u2MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkNSMSkwJwYD VQQKDCBNSU5JU1RFUklPIERFIEhBQ0lFTkRBIC0gU0FOREJPWDEMMAoGA1UECwwDREdUMSQwIgYD VQQDDBtDQSBQRVJTT05BIEZJU0lDQSAtIFNBTkRCT1gwHhcNMTgwNTA2MDAwNDMwWhcNMjAwNTA1 MDAwNDMwWjCBqTEZMBcGA1UEBRMQQ1BGLTAxLTE2NDMtMDA3OTEaMBgGA1UEBAwRVFJFTUlOSU8g TUFEUklHQUwxFDASBgNVBCoMC0NBUkxPUyBKT1NFMQswCQYDVQQGEwJDUjEXMBUGA1UECgwOUEVS U09OQSBGSVNJQ0ExDDAKBgNVBAsMA0NQRjEmMCQGA1UEAwwdQ0FSTE9TIEpPU0UgVFJFTUlOSU8g TUFEUklHQUwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDNROv2+vtHsxd/DuuA+pF u3a/G5UYrWXoQ9JteI4xvwM0mc0RmOLbLmCdh0X5UANecEbLeBinyNA7Dwr73vjZkRB1oM4euVeO Gd3iR2Ylpj+ZN3Db+qJ0BWyTFrzdm+ZgCHBudHSqUjtBT4f1imgYBds4svTug8FWXPAvZ5JIB7nd +E5yTJ8sf0ByeVVEjxwO9A4e0rutQsnYvpkQrlzcJdy81oJZbRGwlGPKBwB1Rp63FeYYdS5tfYFO JKfdh6TWoU3605NDfjsRsJqDQtrP9BcGJvZ19+xtKk/pCHpL0a1/ecQYOms8CxjPYuira2RH7jPw 9beY6lr8GnWaCyv7AgMBAAGjgcowgccwHwYDVR0jBBgwFoAURiPSRE+/V1kh5L+T1TCblUzj94cw HQYDVR0OBBYEFBjdtOuiJwzxsdx7mSyaAkYjfRgaMAsGA1UdDwQEAwIGwDATBgNVHSUEDDAKBggr BgEFBQcDBDBjBggrBgEFBQcBAQRXMFUwUwYIKwYBBQUHMAKGR2h0dHBzOi8vcGtpLmNvbXByb2Jh bnRlc2VsZWN0cm9uaWNvcy5nby5jci9zdGFnL2ludGVybWVkaWF0ZS1wZi1wZW0uY3J0MA0GCSqG SIb3DQEBCwUAA4ICAQCKea+ax3OKh6DMuAqiYFLPChzqYw984mH5n1q5+e8Zc5QMq1hb9pR7/bjJ 0iQ1KLrJ6pMKfe4/OGyq/DEDdqra4sKZ1GjWvorPtnOUMuwTdshdWTr9AaWuOvFagEHuJCFei3Xw XjPWe/qtq63kKJEQL+ss5+bHaFWm0iaWqS8QhkHV9BLe5J2lsjWYJydq1PuwP/7gkc0Ym4J3x50V 8kAuj3pb6P4UfFcAdJQDbKbgBWrdgqUEL+786Er+rCZ7tNS7PZp7ZwRM2OswKoHTGMHughwpArLh 2BZFb4Gsh0lFRhhn8He/+NrjgxuVCaer+xxMWu/W6mEF+FjYxUJY5J2fztxkP9gGo50GrUB0oaIk GF0wOQTbwAV7e5VTudky4DNEXoIofGhMFnp5CJ0t9LDeAS//suM6FvT6dPGOrKjA34IF6BZnVgPp m+7PbifIvREKUmJKL/NgPakYZWozL+SvZR5HJtTUaR3pnUgR5v9NoDJ5IlDpwKTlezaYXre1eRDb hJfVekI0BUjRyNLd5oNmcWamrWma9U1bScQhb/wUFMTS7XU9tIpqoYlZKuYWgCS6JohzXxUwcnt7 i9OcEZeEVbYMCGdzJ1wsFPuUW9sj6Pll9x7yc8BBDtI9SUIktxPd8kbN3f0xSmlBOHr9ptpZ2kNY UT+zmu3/9PIOnJx6Hw==
+</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+    <ds:Object>
+      <xades:QualifyingProperties 
+        xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" 
+        xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05">
+        <xades:SignedProperties Id="xmldsig-5ce9d43d-d8ec-4fee-9762-011426333f05-signedprops">
+          <xades:SignedSignatureProperties>
+            <xades:SigningTime>2018-05-13T14:04:28.435-06:00</xades:SigningTime>
+            <xades:SigningCertificate>
+              <xades:Cert>
+                <xades:CertDigest>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                  <ds:DigestValue>I1Uqew+5Y0PjqCz4HK2cy2mP7t8ov/u3NzQHY7vrc3U=</ds:DigestValue>
+                </xades:CertDigest>
+                <xades:IssuerSerial>
+                  <ds:X509IssuerName>CN=CA PERSONA FISICA - SANDBOX,OU=DGT,O=MINISTERIO DE HACIENDA - SANDBOX,C=CR</ds:X509IssuerName>
+                  <ds:X509SerialNumber>1525565070262</ds:X509SerialNumber>
+                </xades:IssuerSerial>
+              </xades:Cert>
+            </xades:SigningCertificate>
+            <xades:SignaturePolicyIdentifier>
+              <xades:SignaturePolicyId>
+                <xades:SigPolicyId>
+                  <xades:Identifier>https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica</xades:Identifier>
+                </xades:SigPolicyId>
+                <xades:SigPolicyHash>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                  <ds:DigestValue>nVCrSwvK8dNnGHwfLYAzNAQMe5FCQjMl2Pf+Nfu5IBw=</ds:DigestValue>
+                </xades:SigPolicyHash>
+              </xades:SignaturePolicyId>
+            </xades:SignaturePolicyIdentifier>
+          </xades:SignedSignatureProperties>
+        </xades:SignedProperties>
+      </xades:QualifyingProperties>
+    </ds:Object>
+  </ds:Signature>
+</NotaDebitoElectronica>
