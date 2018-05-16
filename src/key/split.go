@@ -1,10 +1,11 @@
-package signature
+package key
 
 import (
 	"encoding/pem"
 	"io/ioutil"
 	"log"
 
+	"github.com/ctreminiom/api-facturacion/src/conf"
 	"golang.org/x/crypto/pkcs12"
 )
 
@@ -36,7 +37,8 @@ func SplitCertificate(patch string, password string) {
 
 	}
 
-	ioutil.WriteFile("data.crt", certificates, 0644)
-	ioutil.WriteFile("key.pem", privateKey, 0644)
+	ioutil.WriteFile(conf.GetVariable("certificate")+"data.crt", certificates, 0644)
+
+	ioutil.WriteFile(conf.GetVariable("private")+"private.key", privateKey, 0644)
 
 }

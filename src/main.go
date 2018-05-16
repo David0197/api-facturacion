@@ -1,14 +1,20 @@
 package main
 
 import (
-	"github.com/ctreminiom/api-facturacion/src/security"
-	"github.com/ctreminiom/api-facturacion/src/xml"
+	"fmt"
+
+	"github.com/ctreminiom/api-facturacion/src/key"
 )
 
 func main() {
 
-	xml.CreateBill("Carlos")
+	//xml.CreateBill("Carlos")
+	//security.Sign()
 
-	security.Sign()
+	//key.SplitCertificate(conf.GetVariable("p12"), conf.GetVariable("p12_password"))
+
+	//fmt.Println(key.PrivateKey())
+
+	fmt.Println(key.PrivateKey().Header)
 
 }

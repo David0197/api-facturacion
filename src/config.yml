@@ -1,0 +1,24 @@
+version: 1.2
+
+root: "/home/ctreminio/Templates/Go/src/github.com/ctreminiom/api-facturacion/"
+
+database:
+  host: "192.168.1.20"
+  password: "Ulacit123"
+  port: 9350
+
+
+p12_password: "1111"
+
+path:
+  p12: "keys/p12/cer.p12"
+  private_key: "keys/pem/"
+  certificates: "keys/crt/"
+
+
+Logging:
+  log_path: ""
+  buffer: ""
+
+
+
