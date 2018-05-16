@@ -15,6 +15,8 @@ func main() {
 
 	//fmt.Println(key.PrivateKey())
 
-	fmt.Println(key.PrivateKey().Header)
+	//fmt.Println(key.PrivateKey().Header)
+
+	fmt.Println(key.Certificates())
 
 }
